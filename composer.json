@@ -1,0 +1,43 @@
+{
+    "name": "fliq/unique-laravel",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/fliq/unique-laravel",
+    "keywords": ["Laravel", "UniqueLaravel"],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "~9",
+        "fliq/unique-php": "^0.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fliq\\UniqueLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fliq\\UniqueLaravel\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "UniqueServiceProvider"
+            ],
+            "aliases": {
+                "UniqueLaravel": "Unique"
+            }
+        }
+    }
+}
