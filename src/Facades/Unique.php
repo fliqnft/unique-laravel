@@ -13,6 +13,6 @@ class Unique extends Facade
      */
     protected static function getFacadeAccessor(): string
     {
-        return 'unique-laravel';
+        return 'unique';
     }
 }
