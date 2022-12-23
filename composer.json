@@ -4,13 +4,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Author Name",
-            "email": "author@email.com",
-            "homepage": "http://author.com"
+            "name": "Christian Pavilonis",
+            "email": "__@christians.email",
+            "homepage": "http://christianpav.com"
         }
     ],
-    "homepage": "https://github.com/fliq/unique-laravel",
-    "keywords": ["Laravel", "UniqueLaravel"],
+    "homepage": "https://github.com/fliqnft/unique-laravel",
+    "keywords": ["Laravel", "Unique Network", "Blockchain", "NFTs"],
     "require": {
         "php": "^8.0",
         "illuminate/support": "~9",
@@ -33,10 +33,10 @@
     "extra": {
         "laravel": {
             "providers": [
-              "UniqueServiceProvider"
+              "Fliq\\UniqueLaravel\\UniqueServiceProvider"
             ],
             "aliases": {
-                "UniqueLaravel": "Unique"
+                "Unique": "Fliq\\UniqueLaravel\\Facades\\Unique"
             }
         }
     }
