@@ -31,7 +31,7 @@ class UniqueServiceProvider extends ServiceProvider
 
         $this->app->singleton('unique', function ($app) {
             if($seed = config('unique.seed')) {
-                $headers =  ['Authorize' => 'Seed '. $seed];
+                $headers =  ['Authorization' => 'Seed '. $seed];
             }
 
             return new Unique(
