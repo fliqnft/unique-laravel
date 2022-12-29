@@ -14,7 +14,7 @@
     "require": {
         "php": "^8.0",
         "illuminate/support": "~9",
-        "fliq/unique-php": "^0.1.0"
+        "fliq/unique-php": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "~9.0",
